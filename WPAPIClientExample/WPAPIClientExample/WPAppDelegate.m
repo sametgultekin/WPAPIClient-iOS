@@ -7,13 +7,18 @@
 //
 
 #import "WPAppDelegate.h"
-
+#import "WPAPIClient/WPWrapper.h"
+#import "WPAPIClient/AFNetworking.h"
 
 @implementation WPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    WPClient *client = [WPClient instanceWith]
+    
     return YES;
 }
 							

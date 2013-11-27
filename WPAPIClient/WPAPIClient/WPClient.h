@@ -6,13 +6,12 @@
 //
 //
 
-#define WP_API_BASEURL @"http://localhost:8888/wordpress/api/"
-
 
 #import "AFHTTPSessionManager.h"
 
 @interface WPClient : AFHTTPSessionManager
 
++ (instancetype)instanceWithOptions:(NSDictionary*)options;
 + (instancetype)sharedClient;
-
++ (NSString*)baseURL;
 @end
